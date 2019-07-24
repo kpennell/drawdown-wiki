@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Button from "@material-ui/core/Button"
+import Typography from '@material-ui/core/Typography';
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -14,10 +15,12 @@ const styles = {
     flexGrow: "1 !important",
   },
   appbar: {
-    backgroundColor: "#AC493A",
+    backgroundColor: "#55A8DD",
   },
   grow:{
-    flexGrow:1
+    flexGrow:1,
+    textTransform:"uppercase"
+
   },
   link: {
     color: `white`,
@@ -38,23 +41,12 @@ class Header extends React.Component {
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
             <div className={classes.grow}>
-              <Link to='/' >
-              <StaticQuery
-                query={graphql`
-                  query {
-                    file(relativePath: { eq: "appendto_logo.png" }) {
-                      childImageSharp {
-                        # Specify the image processing specifications right in the query.
-                        # Makes it trivial to update as your page's design changes.
-                        fixed(width: 150) {
-                          ...GatsbyImageSharpFixed_noBase64
-                        }
-                      }
-                    }
-                  }
-                `}
-                render={data => <Img  critical={true} fadeIn fixed={data.file.childImageSharp.fixed} />}
-              />
+              <Link to='/'  className={classes.link}>
+            
+              <Typography variant="h6" color="inherit">
+           Drawdown Wiki 
+          </Typography>
+          <Typography style={{fontSize:9,color:"white"}}>(Unofficial)</Typography>
               </Link>
             </div>
             <div>
@@ -62,13 +54,7 @@ class Header extends React.Component {
                 <Button color="inherit">About</Button>
               </Link>
 
-              <Link to="/blog" className={classes.link}>
-                <Button color="inherit">Blog</Button>
-              </Link>
 
-              <Link to="/courses" className={classes.link}>
-                <Button color="inherit">Courses</Button>
-              </Link>
             </div>
           </Toolbar>
         </AppBar>

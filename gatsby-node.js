@@ -2,6 +2,41 @@ const path = require(`path`)
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+// exports.sourceNodes = ({ actions }) => {
+//   const { createTypes } = actions
+
+//   createTypes(`
+//     type MarkdownRemark implements Node {
+//       tag: String!
+//       slug: String!
+//       templateKey: String!
+//       rank: Int!
+//       solution: String!
+//       sector: String!
+//       co2_reduction_gt: String!
+//       net_cost_billions: String!
+//       url: String!
+//     }
+//   `)
+// }
+
+
+
+exports.sourceNodes = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MarkdownRemarkFrontmatter @infer {
+      co2_reduction_gt: String
+      
+    }
+
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+  `)
+}
+
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -16,7 +51,13 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
         
-              templateKey
+              templateKey    
+              rank
+              solution
+              sector
+              net_cost_billions
+              co2_reduction_gt
+              url
             }
           }
         }
@@ -61,4 +102,4 @@ exports.createPages = ({ actions, graphql }) => {
         value,
       })
     }
-  }
+  } 

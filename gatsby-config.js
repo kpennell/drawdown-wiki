@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `appendTo`,
+    title: `Drawdown Wiki`,
     description: "hi",
     author: `@gatsbyjs`,
   },
@@ -66,7 +66,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/at.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-netlify-cms`,

@@ -1,13 +1,9 @@
 ---
 templateKey: about-page
-title: About Page testing (created with gatsby-node.js)
+title: About Drawdown Wiki
 ---
-(This text is obnoxiously red on purpose)
+Project Drawdown is an amazing project that quantifies and prioritizes different solutions for reducing and eventually removing CO2 from the atmosphere. PD started as a book and website and later on, a Facebook discussion group was formed. This Facebook group is full of hundreds of people who are passionate about solving climate change. Many of us (in the group) are frustrated with Project Drawdown's slow work and lack of outreach, especially as we read of accelerating climate change. We'd like to find a way to build upon and contribute to the PD framework.
 
-appendTo is your leading source of technical news, tips, and tutorials.
+This "Drawdown Wiki" is an early first draft on what a community driven Drawdown site could look like.
 
-Our training partners have trained over 75,000 students in over 16,000 companies. So we wanted to share their vast knowledge outside of the classroom as well!
-
-Our technical content writers and training sponsors have been helping software developers for decades. Software developers learn best through hands-on expert-led courses and reviewing tutorials, all created and taught by other developers. our industry-recognized team are experts in their domains and regularly contribute to open source projects.
-
-The appendTo team gives back to its community and the developer community in many ways. Through our training sponsors, we’ve sponsored the GoCode Colorado civic hacking competition every year since it started in 2014. Our instructors volunteer with local high schools programming classes and we’ve volunteered building houses, working in soup kitchens, and have done several other volunteer projects. We also sponsor multiple technical MeetUps, including the Boulder Denver Software Club, the Boulder HTML5 users group, and the Boulder/Denver Java Users group.
+This site was made by Kyle Pennell and the code for it lives here: https://github.com/kpennell/drawdown-wiki 

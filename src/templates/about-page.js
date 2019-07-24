@@ -15,7 +15,7 @@ const styles = theme => ({
     marginTop: theme.spacing.unit,
   },
   blogText:{
-    color:theme.palette.primary.main
+   
   }
 });
 
@@ -24,12 +24,7 @@ const AboutPage = ({ data, classes }) => {
 
   return (
     <Layout>
-      <div style={{
-        backgroundImage: `url(${post.frontmatter.image.childImageSharp.fluid.src})`,
-        height:300
-      }}>
-      <h1 className={classes.heroText}>{post.frontmatter.title}</h1>
-      </div>
+
       <div className={classes.mainBlogCopy}>
        <p className={classes.blogText} dangerouslySetInnerHTML={{ __html: post.html }}/> 
       </div>
@@ -50,13 +45,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 1400, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        
       }
     }
   }
