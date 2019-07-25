@@ -6,6 +6,7 @@ sector: Food
 co2_reduction_gt: 66.11
 net_cost_billions: N/A
 url: 'https://www.drawdown.org/solutions/food/plant-rich-diet'
+net_savings_billions: N/A
 ---
 
 Plant-Rich Diet

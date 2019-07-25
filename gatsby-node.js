@@ -57,6 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
               sector
               net_cost_billions
               co2_reduction_gt
+              net_savings_billions
               url
             }
           }

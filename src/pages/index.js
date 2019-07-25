@@ -74,6 +74,7 @@ export default () => (
                 sector
                 co2_reduction_gt
                 net_cost_billions
+                net_savings_billions
                 url
               }
             }

@@ -6,6 +6,7 @@ sector: Food
 co2_reduction_gt: 70.53
 net_cost_billions: N/A
 url: 'https://www.drawdown.org/solutions/food/reduced-food-waste'
+net_savings_billions: N/A
 ---
 
 Reduced Food Waste

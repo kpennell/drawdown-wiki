@@ -4,8 +4,9 @@ rank: 15
 solution: Afforestation
 sector: Land Use
 co2_reduction_gt: 18.06
-net_cost_billions: $29.44
+net_cost_billions: '29.44'
 url: 'https://www.drawdown.org/solutions/land-use/afforestation'
+net_savings_billions: '392.33'
 ---
 
 Afforestation

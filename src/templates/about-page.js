@@ -24,7 +24,6 @@ const AboutPage = ({ data, classes }) => {
 
   return (
     <Layout>
-
       <div className={classes.mainBlogCopy}>
        <p className={classes.blogText} dangerouslySetInnerHTML={{ __html: post.html }}/> 
       </div>

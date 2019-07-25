@@ -7,6 +7,7 @@ co2_reduction_gt: 6.19
 net_cost_billions: N/A
 url: >-
   https://www.drawdown.org/solutions/land-use/indigenous-peoples%E2%80%99-land-management
+net_savings_billions: N/A
 ---
 
 Indigenous Peoples’ Land Management

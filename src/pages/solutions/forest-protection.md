@@ -6,6 +6,7 @@ sector: Land Use
 co2_reduction_gt: 6.2
 net_cost_billions: N/A
 url: 'https://www.drawdown.org/solutions/land-use/forest-protection'
+net_savings_billions: N/A
 ---
 
 Forest Protection
