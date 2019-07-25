@@ -73,7 +73,7 @@ const BlogPage = ({ data, classes }) => {
         </Link>
 
         <Grid container spacing={24} style={{ paddingTop: 20 }}>
-          <Grid item xs={9}>
+          <Grid item lg={9} xs={12}>
             <ExpansionPanel className={classes.expansionPanelParent}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography className={classes.heading}>
@@ -97,7 +97,7 @@ const BlogPage = ({ data, classes }) => {
             </ExpansionPanel>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item lg={3} xs={12}>
             <Typography
               className={classes.pos}
               variant="h4"
